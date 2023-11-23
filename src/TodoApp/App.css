@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(241, 197, 205);
+}
+.todolist {
+  position: absolute;
+  top: 8%;
+  left: 500px;
+}
+.todo {
+  background-color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.todolist h1 {
+  font-size: 40px;
+  font-family: cursive;
+  color: pink;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.todolist .todo form  input {
+  width: 350px;
+  height: 35px;
+  border: 1px solid gainsboro;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-family: cursive;
+  &:focus {
+    outline: none;
+  }
+}
+.todolist .todo form button {
+  height: 35px;
+  background-color: whitesmoke;
+  border: 1px solid gainsboro;
+  border-radius: 7px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: rgb(106, 106, 106);
+  margin: 10px;
+  font-family: cursive;
+  &:hover {
+    color: white;
+    background-color: pink;
+  }
+}
+
+.todolist .list li {
+  font-size: 17px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todolist .list li .fa-trash {
+  color: gray;
+  cursor: pointer;
+  &:hover {
+    color: pink;
+  }
+}
